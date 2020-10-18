@@ -1,0 +1,434 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Mima_Finance_ModelStoreContainer" CdmEntityContainer="Mima_Finance_Entities1">
+    <EntitySetMapping Name="Accounts">
+      <EntityTypeMapping TypeName="Mima_Finance_Model.Account">
+        <MappingFragment StoreEntitySet="Accounts">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="bankId" ColumnName="bankId" />
+          <ScalarProperty Name="accountNumber" ColumnName="accountNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Banks">
+      <EntityTypeMapping TypeName="Mima_Finance_Model.Bank">
+        <MappingFragment StoreEntitySet="Bank">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Bank1" ColumnName="Bank" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Bank_Details">
+      <EntityTypeMapping TypeName="Mima_Finance_Model.Bank_Details">
+        <MappingFragment StoreEntitySet="Bank_Details">
+          <ScalarProperty Name="Bank_ID" ColumnName="Bank_ID" />
+          <ScalarProperty Name="Bank" ColumnName="Bank" />
+          <ScalarProperty Name="Org" ColumnName="Org" />
+          <ScalarProperty Name="Branch" ColumnName="Branch" />
+          <ScalarProperty Name="Account" ColumnName="Account" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bankPaymentVouchers">
+      <EntityTypeMapping TypeName="Mima_Finance_Model.bankPaymentVoucher">
+        <MappingFragment StoreEntitySet="bankPaymentVoucher">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Vnumber" ColumnName="Vnumber" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="ChequeNo" ColumnName="ChequeNo" />
+          <ScalarProperty Name="Bank" ColumnName="Bank" />
+          <ScalarProperty Name="Org" ColumnName="Org" />
+          <ScalarProperty Name="Branch" ColumnName="Branch" />
+          <ScalarProperty Name="Account" ColumnName="Account" />
+          <ScalarProperty Name="PaidTo" ColumnName="PaidTo" />
+          <ScalarProperty Name="Control" ColumnName="Control" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Rupees" ColumnName="Rupees" />
+          <ScalarProperty Name="filterDate" ColumnName="filterDate" />
+          <ScalarProperty Name="createAT" ColumnName="createAT" />
+          <ScalarProperty Name="isPending" ColumnName="isPending" />
+          <ScalarProperty Name="isCancel" ColumnName="isCancel" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BankReceiptVouchers">
+      <EntityTypeMapping TypeName="Mima_Finance_Model.BankReceiptVoucher">
+        <MappingFragment StoreEntitySet="BankReceiptVoucher">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="VNumber" ColumnName="VNumber" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="ChequeNo" ColumnName="ChequeNo" />
+          <ScalarProperty Name="Bank" ColumnName="Bank" />
+          <ScalarProperty Name="Org" ColumnName="Org" />
+          <ScalarProperty Name="Branch" ColumnName="Branch" />
+          <ScalarProperty Name="Account" ColumnName="Account" />
+          <ScalarProperty Name="Received_From" ColumnName="Received_From" />
+          <ScalarProperty Name="A_C_Description" ColumnName="A/C_Description" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Rupees" ColumnName="Rupees" />
+          <ScalarProperty Name="Narration" ColumnName="Narration" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Billings">
+      <EntityTypeMapping TypeName="Mima_Finance_Model.Billing">
+        <MappingFragment StoreEntitySet="Billing">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Bill_id" ColumnName="Bill_id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Control" ColumnName="Control" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="imgPath" ColumnName="imgPath" />
+          <ScalarProperty Name="base64" ColumnName="base64" />
+          <ScalarProperty Name="createAt" ColumnName="createAt" />
+          <ScalarProperty Name="isCancell" ColumnName="isCancell" />
+          <ScalarProperty Name="isPending" ColumnName="isPending" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Calendars">
+      <EntityTypeMapping TypeName="Mima_Finance_Model.Calendar">
+        <MappingFragment StoreEntitySet="Calendar">
+          <ScalarProperty Name="Date_ID" ColumnName="Date_ID" />
+          <ScalarProperty Name="Datekey" ColumnName="Datekey" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="MonthYear" ColumnName="MonthYear" />
+          <ScalarProperty Name="DayOfYear" ColumnName="DayOfYear" />
+          <ScalarProperty Name="DayNo" ColumnName="DayNo" />
+          <ScalarProperty Name="DateName" ColumnName="DateName" />
+          <ScalarProperty Name="BusinessDayNo" ColumnName="BusinessDayNo" />
+          <ScalarProperty Name="DayOfWeek" ColumnName="DayOfWeek" />
+          <ScalarProperty Name="WeekDayName" ColumnName="WeekDayName" />
+          <ScalarProperty Name="WeekNo" ColumnName="WeekNo" />
+          <ScalarProperty Name="WeekOfMonth" ColumnName="WeekOfMonth" />
+          <ScalarProperty Name="DOWInMonth" ColumnName="DOWInMonth" />
+          <ScalarProperty Name="WeekOfYear" ColumnName="WeekOfYear" />
+          <ScalarProperty Name="ISOWeekOfYear" ColumnName="ISOWeekOfYear" />
+          <ScalarProperty Name="Month" ColumnName="Month" />
+          <ScalarProperty Name="MonthName" ColumnName="MonthName" />
+          <ScalarProperty Name="QuarterNo" ColumnName="QuarterNo" />
+          <ScalarProperty Name="QuarterName" ColumnName="QuarterName" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="FirstDayofWeek" ColumnName="FirstDayofWeek" />
+          <ScalarProperty Name="LastDayofWeek" ColumnName="LastDayofWeek" />
+          <ScalarProperty Name="FirstDayOfMonth" ColumnName="FirstDayOfMonth" />
+          <ScalarProperty Name="LastDayOfMonth" ColumnName="LastDayOfMonth" />
+          <ScalarProperty Name="FirstDayOfQuarter" ColumnName="FirstDayOfQuarter" />
+          <ScalarProperty Name="LastDayOfQuarter" ColumnName="LastDayOfQuarter" />
+          <ScalarProperty Name="FirstDayOfYear" ColumnName="FirstDayOfYear" />
+          <ScalarProperty Name="LastDayOfYear" ColumnName="LastDayOfYear" />
+          <ScalarProperty Name="FirstDayOfNextMonth" ColumnName="FirstDayOfNextMonth" />
+          <ScalarProperty Name="FirstDayOfNextYear" ColumnName="FirstDayOfNextYear" />
+          <ScalarProperty Name="IsWeekend" ColumnName="IsWeekend" />
+          <ScalarProperty Name="IsHoliday" ColumnName="IsHoliday" />
+          <ScalarProperty Name="HolidayDescription" ColumnName="HolidayDescription" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cashPaymentVouchers">
+      <EntityTypeMapping TypeName="Mima_Finance_Model.cashPaymentVoucher">
+        <MappingFragment StoreEntitySet="cashPaymentVoucher">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Vnumber" ColumnName="Vnumber" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="PaidTo" ColumnName="PaidTo" />
+          <ScalarProperty Name="Control" ColumnName="Control" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Rupees" ColumnName="Rupees" />
+          <ScalarProperty Name="filterDate" ColumnName="filterDate" />
+          <ScalarProperty Name="createAT" ColumnName="createAT" />
+          <ScalarProperty Name="isPending" ColumnName="isPending" />
+          <ScalarProperty Name="isCancel" ColumnName="isCancel" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CashReceiptVouchers">
+      <EntityTypeMapping TypeName="Mima_Finance_Model.CashReceiptVoucher">
+        <MappingFragment StoreEntitySet="CashReceiptVoucher">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="VNumber" ColumnName="VNumber" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Received_From" ColumnName="Received_From" />
+          <ScalarProperty Name="A_C_Description" ColumnName="A/C_Description" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Rupees" ColumnName="Rupees" />
+          <ScalarProperty Name="Narration" ColumnName="Narration" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Control_Details">
+      <EntityTypeMapping TypeName="Mima_Finance_Model.Control_Details">
+        <MappingFragment StoreEntitySet="Control_Details">
+          <ScalarProperty Name="Control_ID" ColumnName="Control_ID" />
+          <ScalarProperty Name="Control" ColumnName="Control" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Logins">
+      <EntityTypeMapping TypeName="Mima_Finance_Model.Login">
+        <MappingFragment StoreEntitySet="Login">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="passwordq" ColumnName="passwordq" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Paid_to_Details">
+      <EntityTypeMapping TypeName="Mima_Finance_Model.Paid_to_Details">
+        <MappingFragment StoreEntitySet="Paid_to_Details">
+          <ScalarProperty Name="Paid_to_ID" ColumnName="Paid_to_ID" />
+          <ScalarProperty Name="Paid_to" ColumnName="Paid_to" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Payables">
+      <EntityTypeMapping TypeName="Mima_Finance_Model.Payable">
+        <MappingFragment StoreEntitySet="Payable">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Payment_Date" ColumnName="Payment_Date" />
+          <ScalarProperty Name="Supplier_Other" ColumnName="Supplier_Other" />
+          <ScalarProperty Name="Payment_Against" ColumnName="Payment_Against" />
+          <ScalarProperty Name="Comapny" ColumnName="Comapny" />
+          <ScalarProperty Name="Department" ColumnName="Department" />
+          <ScalarProperty Name="Expense" ColumnName="Expense" />
+          <ScalarProperty Name="Bank_Cash" ColumnName="Bank_Cash" />
+          <ScalarProperty Name="Bill_Amount" ColumnName="Bill_Amount" />
+          <ScalarProperty Name="Tax_Rate" ColumnName="Tax_Rate" />
+          <ScalarProperty Name="Tax" ColumnName="Tax" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Ref_Inst_Nos" ColumnName="Ref_Inst_Nos" />
+          <ScalarProperty Name="Ref_V_Type" ColumnName="Ref_V_Type" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="isActive" ColumnName="isActive" />
+          <ScalarProperty Name="createAt" ColumnName="createAt" />
+          <ScalarProperty Name="updateAT" ColumnName="updateAT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Recievables">
+      <EntityTypeMapping TypeName="Mima_Finance_Model.Recievable">
+        <MappingFragment StoreEntitySet="Recievable">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="GlCode" ColumnName="GlCode" />
+          <ScalarProperty Name="number_Instrument" ColumnName="number_Instrument" />
+          <ScalarProperty Name="Date_Instrument" ColumnName="Date_Instrument" />
+          <ScalarProperty Name="bank_Instrument" ColumnName="bank_Instrument" />
+          <ScalarProperty Name="company" ColumnName="company" />
+          <ScalarProperty Name="department" ColumnName="department" />
+          <ScalarProperty Name="invoice_amount" ColumnName="invoice_amount" />
+          <ScalarProperty Name="rate" ColumnName="rate" />
+          <ScalarProperty Name="tax" ColumnName="tax" />
+          <ScalarProperty Name="wst" ColumnName="wst" />
+          <ScalarProperty Name="totalAmount" ColumnName="totalAmount" />
+          <ScalarProperty Name="bank_cash_ToBeDepositedvarchar" ColumnName="bank_cash_ToBeDepositedvarchar" />
+          <ScalarProperty Name="date_ToBeDeposited" ColumnName="date_ToBeDeposited" />
+          <ScalarProperty Name="comments" ColumnName="comments" />
+          <ScalarProperty Name="isActive" ColumnName="isActive" />
+          <ScalarProperty Name="creatAt" ColumnName="creatAt" />
+          <ScalarProperty Name="updateAt" ColumnName="updateAt" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Branches">
+      <EntityTypeMapping TypeName="Mima_Finance_Model.Branch">
+        <MappingFragment StoreEntitySet="Branch">
+          <ScalarProperty Name="BankID" ColumnName="BankID" />
+          <ScalarProperty Name="BarnchName" ColumnName="BarnchName" />
+          <ScalarProperty Name="BankAddress" ColumnName="BankAddress" />
+          <ScalarProperty Name="BranchName" ColumnName="BranchName" />
+          <ScalarProperty Name="BranchCode" ColumnName="BranchCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Clients">
+      <EntityTypeMapping TypeName="Mima_Finance_Model.Client">
+        <MappingFragment StoreEntitySet="Client">
+          <ScalarProperty Name="ClientID" ColumnName="ClientID" />
+          <ScalarProperty Name="ClientName" ColumnName="ClientName" />
+          <ScalarProperty Name="ClientRef" ColumnName="ClientRef" />
+          <ScalarProperty Name="ClientCity" ColumnName="ClientCity" />
+          <ScalarProperty Name="ClientPhone" ColumnName="ClientPhone" />
+          <ScalarProperty Name="ClientAddress" ColumnName="ClientAddress" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Companies">
+      <EntityTypeMapping TypeName="Mima_Finance_Model.Company">
+        <MappingFragment StoreEntitySet="Company">
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Customers">
+      <EntityTypeMapping TypeName="Mima_Finance_Model.Customer">
+        <MappingFragment StoreEntitySet="Customers">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Departments">
+      <EntityTypeMapping TypeName="Mima_Finance_Model.Department">
+        <MappingFragment StoreEntitySet="Department">
+          <ScalarProperty Name="DepartmentID" ColumnName="DepartmentID" />
+          <ScalarProperty Name="DepartmentName" ColumnName="DepartmentName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Expenses">
+      <EntityTypeMapping TypeName="Mima_Finance_Model.Expense">
+        <MappingFragment StoreEntitySet="Expense">
+          <ScalarProperty Name="ExpID" ColumnName="ExpID" />
+          <ScalarProperty Name="Exp" ColumnName="Exp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Suppliers">
+      <EntityTypeMapping TypeName="Mima_Finance_Model.Supplier">
+        <MappingFragment StoreEntitySet="Supplier">
+          <ScalarProperty Name="SupplierID" ColumnName="SupplierID" />
+          <ScalarProperty Name="SupplierName" ColumnName="SupplierName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="AddBanks" FunctionName="Mima_Finance_Model.Store.AddBanks" />
+    <FunctionImportMapping FunctionImportName="Bank_Payment_Details" FunctionName="Mima_Finance_Model.Store.Bank_Payment_Details">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Mima_Finance_Model.Bank_Payment_Details_Result">
+          <ScalarProperty Name="Vnumber" ColumnName="Vnumber" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="ChequeNo" ColumnName="ChequeNo" />
+          <ScalarProperty Name="Bank" ColumnName="Bank" />
+          <ScalarProperty Name="PaidTo" ColumnName="PaidTo" />
+          <ScalarProperty Name="Control" ColumnName="Control" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="filterDate" ColumnName="filterDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Bank_Payment_Details_Chart" FunctionName="Mima_Finance_Model.Store.Bank_Payment_Details_Chart">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Mima_Finance_Model.Bank_Payment_Details_Chart_Result">
+          <ScalarProperty Name="Bank" ColumnName="Bank" />
+          <ScalarProperty Name="Volume" ColumnName="Volume" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Cash_Payment_Details" FunctionName="Mima_Finance_Model.Store.Cash_Payment_Details">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Mima_Finance_Model.Cash_Payment_Details_Result">
+          <ScalarProperty Name="Vnumber" ColumnName="Vnumber" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="PaidTo" ColumnName="PaidTo" />
+          <ScalarProperty Name="Control" ColumnName="Control" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="filterDate" ColumnName="filterDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Controller_Volum_Chart" FunctionName="Mima_Finance_Model.Store.Controller_Volum_Chart">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Mima_Finance_Model.Controller_Volum_Chart_Result">
+          <ScalarProperty Name="Control" ColumnName="Control" />
+          <ScalarProperty Name="Volume" ColumnName="Volume" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="CountOfBilling" FunctionName="Mima_Finance_Model.Store.CountOfBilling" />
+    <FunctionImportMapping FunctionImportName="sp_AddBanks" FunctionName="Mima_Finance_Model.Store.sp_AddBanks" />
+    <FunctionImportMapping FunctionImportName="sp_Cancel" FunctionName="Mima_Finance_Model.Store.sp_Cancel" />
+    <FunctionImportMapping FunctionImportName="sp_PendingRecord" FunctionName="Mima_Finance_Model.Store.sp_PendingRecord">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Mima_Finance_Model.sp_PendingRecord_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Vnumber" ColumnName="Vnumber" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="ChequeNo" ColumnName="ChequeNo" />
+          <ScalarProperty Name="Bank" ColumnName="Bank" />
+          <ScalarProperty Name="Org" ColumnName="Org" />
+          <ScalarProperty Name="Branch" ColumnName="Branch" />
+          <ScalarProperty Name="Account" ColumnName="Account" />
+          <ScalarProperty Name="PaidTo" ColumnName="PaidTo" />
+          <ScalarProperty Name="Control" ColumnName="Control" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Rupees" ColumnName="Rupees" />
+          <ScalarProperty Name="filterDate" ColumnName="filterDate" />
+          <ScalarProperty Name="createAT" ColumnName="createAT" />
+          <ScalarProperty Name="isPending" ColumnName="isPending" />
+          <ScalarProperty Name="isCancel" ColumnName="isCancel" />
+          <ScalarProperty Name="id1" ColumnName="id1" />
+          <ScalarProperty Name="Bank1" ColumnName="Bank1" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_pendingToSubmit" FunctionName="Mima_Finance_Model.Store.sp_pendingToSubmit" />
+    <FunctionImportMapping FunctionImportName="spPopulateDateDimension" FunctionName="Mima_Finance_Model.Store.spPopulateDateDimension" />
+    <FunctionImportMapping FunctionImportName="SumOfAmountBilling" FunctionName="Mima_Finance_Model.Store.SumOfAmountBilling" />
+    <FunctionImportMapping FunctionImportName="Total_Bank_Details" FunctionName="Mima_Finance_Model.Store.Total_Bank_Details">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Mima_Finance_Model.Total_Bank_Details_Result">
+          <ScalarProperty Name="Vnumber" ColumnName="Vnumber" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="PaidTo" ColumnName="PaidTo" />
+          <ScalarProperty Name="Control" ColumnName="Control" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Total_Bank_Pending_Details" FunctionName="Mima_Finance_Model.Store.Total_Bank_Pending_Details">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Mima_Finance_Model.Total_Bank_Pending_Details_Result">
+          <ScalarProperty Name="Vnumber" ColumnName="Vnumber" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="PaidTo" ColumnName="PaidTo" />
+          <ScalarProperty Name="Control" ColumnName="Control" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Total_Bank_Pending_Units" FunctionName="Mima_Finance_Model.Store.Total_Bank_Pending_Units" />
+    <FunctionImportMapping FunctionImportName="Total_Bank_Units" FunctionName="Mima_Finance_Model.Store.Total_Bank_Units" />
+    <FunctionImportMapping FunctionImportName="Total_Bank_Volume" FunctionName="Mima_Finance_Model.Store.Total_Bank_Volume" />
+    <FunctionImportMapping FunctionImportName="Total_Cash_Details" FunctionName="Mima_Finance_Model.Store.Total_Cash_Details">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Mima_Finance_Model.Total_Cash_Details_Result">
+          <ScalarProperty Name="Vnumber" ColumnName="Vnumber" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="PaidTo" ColumnName="PaidTo" />
+          <ScalarProperty Name="Control" ColumnName="Control" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Total_Cash_Pending_Details" FunctionName="Mima_Finance_Model.Store.Total_Cash_Pending_Details">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Mima_Finance_Model.Total_Cash_Pending_Details_Result">
+          <ScalarProperty Name="Vnumber" ColumnName="Vnumber" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="PaidTo" ColumnName="PaidTo" />
+          <ScalarProperty Name="Control" ColumnName="Control" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Total_Cash_Pending_Units" FunctionName="Mima_Finance_Model.Store.Total_Cash_Pending_Units" />
+    <FunctionImportMapping FunctionImportName="Total_Cash_Units" FunctionName="Mima_Finance_Model.Store.Total_Cash_Units" />
+    <FunctionImportMapping FunctionImportName="Total_Cash_Volume" FunctionName="Mima_Finance_Model.Store.Total_Cash_Volume" />
+  </EntityContainerMapping>
+</Mapping>
